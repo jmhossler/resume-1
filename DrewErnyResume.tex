@@ -7,10 +7,10 @@
 
 %This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 \newlength{\outerbordwidth}
 \pagestyle{empty}
-\raggedbottom
+\flushbottom
 \raggedright
 \usepackage[svgnames]{xcolor}
 \usepackage{framed}
@@ -38,121 +38,144 @@
 \setlength{\topmargin}{-0.3in}
 \setlength{\topskip}{0in}
 \setlength{\voffset}{0.1in}
+%\setlength{\bmargin}{-0.3in}
 
 %-----------------------------------------------------------
 %Custom commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{\vspace{8pt}
-  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
-    \begin{shaded}
+  \newcommand{\resheading}[1]{\vspace{-2pt}
+    \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+      \begin{shaded}
 
-\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
-    \end{shaded}
-  }\vspace{-5pt}
-}
+        \setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+      \end{shaded}
+    }\vspace{-10pt}
+  }
 
-\newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
+  \newcommand{\ressubheading}[4]{
+    \begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-6pt}}
 
-%-----------------------------------------------------------
-\begin{document}
+  %-----------------------------------------------------------
+  \begin{document}
 
-\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+  \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 
-\textbf{\Large Drew Erny} & \textbf{\today} \\
-  \texttt{drewerny@live.com} & \textt{985 665-1284} \\
-\texttt{@dperny} & \texttt{github.com/dperny}
+    \textbf{\Large Drew Erny} & \textbf{\today} \\
+    \texttt{drewerny@gmail.com} & \texttt{985 665-1284} \\
+    \texttt{dperny.net} & \texttt{github.com/dperny}
 
-\end{tabular*}
+  \end{tabular*}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\resheading{Education}
+  \resheading{Skills}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{itemize}
-
-\item
-  \ressubheading{The University of Alabama}{Tuscaloosa, AL}{B.S. Computer Science}{2012-2016 (expected)}
-	\begin{itemize}
-		\resitem{National Merit Finalist}
-		\resitem{Engineering Leadership Scholarship recipient}
-	\end{itemize}
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{Skills}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{itemize}
-
-  \item {\bf Development:} Ruby, Python, C, Java, Scheme, Rust (learning)
-  
-  \item {\bf Web:} HTML5/CSS3/Javascript (standard front end stack), Ruby on Rails back end. Sass and Haml.
-
-  \item {\bf Software and Technology:} Strong understanding of Unix (including server administration), bash, zsh, git, vim, and tmux.
-
-  \item Ability and passion for imparting technical concepts to non-technical people or novice programmers.
-
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{Career Experience}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{itemize}
-
-\item
-  \ressubheading{Nine (nine.is)}{Tuscaloosa, AL}{Software Engineer}{November 2013 - August 2014}
-	\begin{itemize}
-            \resitem Performed full-stack development and maintainence of large-scale Ruby on Rails web applications for healthcare businesses, real estate agencies, and government agencies.
-            \resitem Maintained legacy PHP websites.
-            \resitem Communicated technical concepts to nontechnical clients.
-	\end{itemize}
-
-  \ressubheading{National Science Foundation Research Experience for Undergraduates}{Tuscaloosa, AL}{}{Summer 2013}
-	\begin{itemize}
-            \resitem Designed and programmed educational modifications for teaching circuits at a college level using the popular video game Minecraft.
-            \resitem Worked with small group of faculty members who provided high level design requirements and feedback.
-	\end{itemize}
-
-  \ressubheading{Technology Assistant, Office of eTech}{}{Student Technology Assistant}{January 2013 - April 2013}
-	\begin{itemize}
-      \resitem Performed on and off site troubleshooting, repair, setup, and installation of hardware and software for the University of Alabama College of Arts \& Sciences.
-	\end{itemize}
-
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{Leadership and Service Experience}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{itemize}
-
-\item
-  \ressubheading{Head Judicial Officer}{The Mallet Assembly}{}{December 2013 - Present}
   \begin{itemize}
-    \resitem Maintained, revised, and rewrote the organization's constitution.
-    \resitem Presided over disciplinary hearings and worked with University administration to uphold the student code of conduct.
-	\end{itemize}
 
-\item
-  \ressubheading{Vice Chair}{Association for Computing Machinery, University of Alabama Chapter}{}{January 2013 - September 2013}
+    \item {\bf Development:} Ruby, Python, C, Java, Scheme, Rust (learning)
+
+    \item {\bf Web:} HTML5/CSS3/Javascript (standard front end stack), Ruby on Rails back end. Sass and Haml.
+
+    \item {\bf Software and Technology:} Strong understanding of Unix (including server administration), bash, zsh, git, vim, and tmux.
+    \item {\bf Tutoring:} Run unofficial computer science study sessions and one-on-one tutoring for classmates, peers, and underclassmen.
+
+      % \item Ability and passion for imparting technical concepts to non-technical people or novice programmers.
+
+  \end{itemize}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \resheading{Career Experience}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
   \begin{itemize}
-    \resitem Coordinated guest industry events such as Microsoft appLab.
-    \resitem Planned and executed chapter social events.
-	\end{itemize}
 
-\end{itemize}
+    \item
+      \ressubheading{Nine (nine.is)}{Tuscaloosa, AL}{Software Engineer}{November 2013 - August 2014}
+      \begin{itemize}
+          \resitem{Performed full-stack development and maintenance of large-scale Ruby on Rails web applications for health care businesses, real estate agencies, and government.}
+          \resitem{Maintained legacy PHP websites.}
+          \resitem{Communicated technical concepts to nontechnical clients.}
+      \end{itemize}
 
-\end{document}
+    \item
+      \ressubheading{NSF Research Experience for Undergraduates}{Tuscaloosa, AL}{Software Engineering}{Summer 2013}
+      \begin{itemize}
+          \resitem{Designed and programmed educational modifications for teaching circuits at a college level using the popular video game Minecraft.}
+          \resitem {Worked with small group of faculty members who provided high level design requirements and feedback.}
+      \end{itemize}
+
+    \item
+      \ressubheading{Technology Assistant, Office of eTech}{Tuscaloosa, AL}{Student Technology Assistant}{January 2013 - April 2013}
+      \begin{itemize}
+          \resitem{Performed on and off site troubleshooting, repair, setup, and installation of hardware and software for the University of Alabama College of Arts \& Sciences.}
+      \end{itemize}
+
+  \end{itemize}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \resheading{Projects}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \begin{itemize}
+    \item 
+      \ressubheading{DayBreaker.co}{Startup Weekend Tuscaloosa}{https://github.com/MasterTasker/DayBreaker}{September 2014}
+      \begin{itemize}
+          \resitem{Led a team of professional and student developers to construct a time-management application.}
+          \resitem{Built a functional prototype in two days.}
+      \end{itemize}
+  \end{itemize}
+
+  \pagebreak
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \resheading{Education}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \begin{itemize}
+
+    \item
+      \ressubheading{The University of Alabama}{Tuscaloosa, AL}{B.S. Computer Science}{2012-2016 (expected)}
+      \begin{itemize}
+          \resitem{National Merit Finalist}
+          \resitem{Engineering Leadership Scholarship recipient}
+      \end{itemize}
+  \end{itemize}
+
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \resheading{Leadership and Service Experience}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \begin{itemize}
+
+    \item
+      \ressubheading{Head Judicial Officer}{The Mallet Assembly}{}{December 2013 - Present}
+      \begin{itemize}
+          \resitem{Maintained, revised, and rewrote the constitution for the longest continuously running honors program at the University of Alabama.}
+          \resitem{Presided over disciplinary hearings and worked with University administration to uphold the student code of conduct.}
+      \end{itemize}
+
+    \item
+      \ressubheading{Vice Chair}{Association for Computing Machinery, University of Alabama Student Chapter}{}{January 2013 - September 2013}
+      \begin{itemize}
+          \resitem{Coordinated guest industry events such as Microsoft appLab.}
+          \resitem{Planned and executed chapter social events.}
+      \end{itemize}
+
+  \end{itemize}
+
+  \end{document}
+
