@@ -21,4 +21,4 @@ $ sudo apt-get install texlive texlive-latex-extra
 
 Mac requirements:
 
-I reccommend the MacTex distribution, which is what I use to build this on my Macbook Pro.
+I recommend the MacTex distribution, which is what I use to build this on my Macbook Pro.
