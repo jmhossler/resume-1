@@ -1,4 +1,4 @@
-all: DrewErnyResume.pdf
+all: JohnHosslerResume.pdf
 
-DrewErnyResume.pdf: DrewErnyResume.tex
+JohnHosslerResume.pdf: JohnHosslerResume.tex
 	pdflatex $<
