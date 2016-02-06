@@ -1,4 +1,7 @@
-all: JohnHosslerResume.pdf
+all: JohnHosslerResume.pdf JohnHosslerGoogleResume.pdf
 
 JohnHosslerResume.pdf: JohnHosslerResume.tex
-	pdflatex $<
+	pdflatex JohnHosslerResume.tex
+
+JohnHosslerGoogleResume.pdf: JohnHosslerGoogleResume.tex
+	pdflatex JohnHosslerGoogleResume.tex
