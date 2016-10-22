@@ -1,7 +1,7 @@
-all: JohnHosslerResume.pdf JohnHosslerGoogleResume.pdf
+all: JohnHosslerResume.pdf
 
 JohnHosslerResume.pdf: JohnHosslerResume.tex
 	pdflatex JohnHosslerResume.tex
 
-JohnHosslerGoogleResume.pdf: JohnHosslerGoogleResume.tex
-	pdflatex JohnHosslerGoogleResume.tex
+clean:
+	rm *.aux *.log *.pdf
