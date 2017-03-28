@@ -59,6 +59,11 @@
       \textit{#3} & \textit{#4} \\
   \end{tabular*}\vspace{-6pt}}
 
+  \newcommand{\secondsubheading}[2]{
+    \begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+      \textit{#1} & \textit{#2} \\
+  \end{tabular*}\vspace{-6pt}}
+
   %-----------------------------------------------------------
   \begin{document}
 
@@ -117,7 +122,7 @@
           \resitem{Provided documentation and training for tools created during term.}
           \resitem{Began the conversion of the company's AP simulator from using VMs to Docker images.}
       \end{itemize}
-      \ressubheading{Adtran}{Huntsville, AL}{Co-Op 2nd Term}{Jan 2017 - May 2017}
+      \secondsubheading{Co-Op 2nd Term}{Jan 2017 - May 2017}
       \begin{itemize}
           \resitem{Augmented a Continuous Integration Pipeline.}
           \resitem{Upgraded and integrated new hardware into the CI Pipeline's testbeds.}
