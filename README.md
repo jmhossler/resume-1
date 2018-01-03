@@ -19,6 +19,7 @@ Ubuntu requirements:
 $ sudo apt-get install texlive texlive-latex-extra
 ```
 
-Mac requirements:
-
-I recommend the MacTex distribution, which is what I use to build this on my Macbook Pro.
+Antergos requirements:
+```bash
+$ sudo pacman -S texlive-core texlive-latexextra
+```
