@@ -64,38 +64,41 @@
       \textit{#1} & \textit{#2} \\
   \end{tabular*}\vspace{-6pt}}
 
+  \newcommand{\basicsubheading}[1]{
+    \begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+      \textit{#1} \\
+  \end{tabular*}\vspace{-6pt}}
+
   %-----------------------------------------------------------
   \begin{document}
 
   \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-
     \textbf{\Large John Hossler} & \textbf{\today} \\
     \texttt{john.m.hossler@gmail.com} & \texttt{(205) 435-0986} \\
-    \texttt{jmhossler.github.io} & \texttt{github.com/jmhossler}
-
   \end{tabular*}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Objective
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \vspace{6mm}
+  Motivated developer focused on improving developer experience and product quality. Looking to fill a Software Developer role
+  to help deliver new products in a timely and confident fashion.
 
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \resheading{Skillsets}
-
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
   \begin{itemize}
-    \item {\bf Languages:} Python, C, C++, Go, Javascript, Bash
-    \item {\bf Methodologies:} Agile, Clean Code, Pair Programming, SAFe
-    \item {\bf Utilities:} Kubernetes, ansible, puppet, juju, Bash, git, vim, \LaTeX, Docker, Pytest, PyPi, Artifactory, Jenkins, Robot Framework
-    \item {\bf Operating Systems:} Arch Linux, Ubuntu, Windows
+    \item {\bf Preferred Language:} Python
+    \item {\bf Methodologies:} Agile, Clean Code, Clean Architecture, Pair Programming, SAFe, Behavior Driven Development, Test Driven Development
+    \item {\bf Utilities:} kubernetes, ansible, git, docker, docker-compose, pytest, artifactory, jenkins, openstack, robot framework
   \end{itemize}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
   \resheading{Education}
-
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
   \begin{itemize}
-
     \item
       \ressubheading{The University of Alabama}{Tuscaloosa, AL}{B.S. Computer Science}{May 2018}
       \begin{itemize}
@@ -106,43 +109,56 @@
   \end{itemize}
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
   \resheading{Career Experience}
-
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
   \begin{itemize}
-
     \item
       \ressubheading{Adtran}{Huntsville, AL}{Co-Op 1st Term}{May 2016 - August 2016}
       \begin{itemize}
           \resitem{Wrote scripts to standardize the company's existing automation libraries on PEP8 coding style.}
           \resitem{Reworked automation libraries to better utilize coding principles like inheritance, encapsulation, and DRY code.}
-          \resitem{Provided documentation and training for tools created during term.}
-          \resitem{Began the conversion of the company's AP simulator from using VMs to Docker images.}
       \end{itemize}
       \secondsubheading{Co-Op 2nd Term}{Jan 2017 - August 2017}
       \begin{itemize}
           \resitem{Worked on test automation software to help with Continuous Integration goals in the company.}
-          \resitem{Helped refactor existing packages to ease testing and increase test coverage.}
-          \resitem{Segmented existing packages into more granular packages to isolate functionality.}
-          \resitem{Created visualization tool for increased visibility on test case health.}
-          \resitem{Participated and won category in Hackathon event.}
-          \resitem{Gave internal tech talks on tools that I made.}
-          \resitem{Monitored Continuous Integration Pipeline and helped recover testbeds, noting bugs to be fixed.}
+          \resitem{Helped refactor existing packages to ease extension of functionality}
+          \resitem{Participated and won documentation category in Hackathon event.}
       \end{itemize}
       \secondsubheading{Co-op 3rd Term}{August 2017 - December 2017}
       \begin{itemize}
           \resitem{Used Jenkins to automate the maintenance of permissions between Github
           Repositories and corresponding Jenkins Jobs.}
-          \resitem{Created promotion model for group on Artifactory.}
-          \resitem{Added functionality to a private Github administration Python tool.}
-          \resitem{Performed general adminstration tasks on Jenkins, Artifactory, and Github.}
-          \resitem{Participated and won 3rd Place in Hackathon event for a voting tool.}
+          \resitem{Worked on Artifactory configuration to aid in Continous Delivery}
+          \resitem{Performed adminstration tasks on Jenkins, Artifactory, and Github.}
+          \resitem{Participated and won 3rd Place in Hackathon event}
       \end{itemize}
-
+      \secondsubheading{Full time}{June 2018 - Present}
+      \begin{itemize}
+          \resitem{Wrote automated tests for products to verify customer requirements.}
+          \resitem{Improved and created Continous Integration and Continous Delivery tools to shorten the
+          time from code submission to release.}
+          \resitem{Maintained test infrastructure.}
+          \resitem{Built tool for gathering metrics from developer environments across the globe.}
+      \end{itemize}
   \end{itemize}
 
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \resheading{Personal Projects}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \begin{itemize}
+    \item
+      \basicsubheading{Group Study}
+      \begin{itemize}
+          \resitem{Organized and maintained book club for reading software engineering books.}
+          \resitem{Organized study group for CCNA study group.}
+      \end{itemize}
+      \basicsubheading{Home lab}
+      \begin{itemize}
+          \resitem{Built a small local kubernetes cluster ran on a mixture of rasberry pis and old machines.}
+          \resitem{Deployed gitlab along with gitlab runners to machines with docker-compose and ansible.}
+      \end{itemize}
+  \end{itemize}
 
 \end{document}
-
